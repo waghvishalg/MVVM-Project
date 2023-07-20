@@ -13,7 +13,6 @@ final class ProductViewModel {
     var products: [Product] = []
     var eventHandler: ((_ event: Events) -> Void)? // Data Binding closure
     
-    
     func fetchProduct() {
         self.eventHandler?(.startLoading)
         APIManager.shared.request(
@@ -48,7 +47,6 @@ final class ProductViewModel {
 }
 
 extension ProductViewModel {
-    
     enum Events {
         case startLoading
         case stopLoading

@@ -17,7 +17,6 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    
     var product: Product? {
         didSet {
             productConfiguration()
@@ -49,5 +48,4 @@ class ProductCell: UITableViewCell {
         rateButton.setTitle("\(product.rating.rate)", for: .normal)
         productImageView.setImage(with: product.image)
     }
-    
 }

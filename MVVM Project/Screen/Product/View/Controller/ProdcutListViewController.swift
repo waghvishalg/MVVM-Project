@@ -63,9 +63,7 @@ extension ProductListViewController {
     }
 }
 
-
 extension ProductListViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.products.count
     }
@@ -79,6 +77,4 @@ extension ProductListViewController: UITableViewDataSource {
         cell.product = product
         return cell
     }
-    
-    
 }

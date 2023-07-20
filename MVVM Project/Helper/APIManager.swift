@@ -68,8 +68,9 @@ final class APIManager {
     }
 }
 
-
-/*func fetchProducts(completionHandler: @escaping Handler) {
+/*
+ //MARK: - API without Generic
+ func fetchProducts(completionHandler: @escaping Handler) {
     guard let url = URL(string: Constant.API.productURL) else {
         completionHandler(.failure(.invalidURL))
         return

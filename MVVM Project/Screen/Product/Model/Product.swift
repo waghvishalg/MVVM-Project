@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Product: Codable {
     let id: Int
     let title: String

@@ -12,20 +12,11 @@ struct AddProduct: Codable {
     let title: String
 }
 
-//struct ProductResponse: Decodable {
-//    var id: Int
-//    var title: String
-//}
-
 class AddProductViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         addProduct()
-    }
-    
-    @IBAction func addProductButtonClick(_ sender: Any) {
-        
     }
     
     func addProduct() {
